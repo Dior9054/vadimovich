@@ -1,0 +1,1314 @@
+@font-face {
+  font-family: "TroubleSide";
+  src: url("/assets/fonts/Troubleside.ttf") format("truetype");
+}
+@font-face {
+  font-family: "c Combe";
+  src: url("/assets/fonts/Combe.otf") format("truetype");
+}
+@font-face {
+  font-family: "FontName";
+  src: url("/assets/fonts/IBMPlexSans/IBMPlexSans-SemiBold.ttf") format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background: url(/assets/img/backgroun--full-=img.png) no-repeat center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  max-width: 1680px;
+  margin: auto;
+}
+
+.font {
+  background: url(/assets/img/backgroun--img--fon.png) center/cover;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background: url(/assets/img/header--red--fon.png) bottom/cover;
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(/assets/img/header--fon.png) center/cover;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.header--body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.header--body--logo img {
+  cursor: pointer;
+}
+.header--body--burger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 35%;
+  position: relative;
+}
+.header--body--burger--navigat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header--body--burger--navigat a {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.4;
+  transition: 0.3s;
+}
+.header--body--burger--navigat a.activ {
+  opacity: 1;
+}
+.header--body--burger--navigat a:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+.header--body--burger--buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.header--body--burger--buttons--leng {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.header--body--burger--buttons--leng span {
+  color: #F2F2F2;
+  font-family: "IBM Plex Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.header--body--burger--buttons--leng .activ {
+  opacity: 1;
+}
+.header--body--burger--buttons--leng h1 {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: "c Combe";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.4;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.header--body--burger--buttons--leng h1:focus {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.header--body--burger--buttons button {
+  background: url(/assets/svg/button--font.svg) center;
+  border: none;
+  padding: 6px 26px 12px 26px;
+  cursor: pointer;
+}
+.header--body--burger--buttons button a {
+  color: #B52A2D;
+  text-align: center;
+  font-family: "TroubleSide";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header--body--menu {
+  width: 25px;
+  height: 25px;
+  display: none;
+  position: relative;
+}
+.header--body--menu img {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.header--body--menu .open {
+  display: block;
+}
+.header--body--menu .close {
+  display: none;
+}
+
+.main .title {
+  margin-top: 50px;
+}
+.main .title--text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin-bottom: 26px;
+}
+.main .title--text h1 {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .title--front {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.main .title--front .gallery--cards--fon.act {
+  width: 830px;
+  height: 658px;
+  background: url(/assets/img/full--man--img.png) center;
+}
+.main .title--front .gallery--cards--fon.act::before {
+  background-size: cover;
+  background-position: initial;
+}
+.main .title--front--paragraphs > h1 {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  max-width: 510px;
+  margin-bottom: 32px;
+}
+.main .title--front--paragraphs > p {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 768px;
+  margin-bottom: 63px;
+}
+.main .title--front--paragraphs--designe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.main .title--front--paragraphs--designe > p {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 300px;
+}
+.main .title--front--paragraphs--designe--chart p:first-child {
+  margin-bottom: 20px;
+}
+.main .title--front--paragraphs--designe--chart p {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.main .title--front--paragraphs--flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+  margin-bottom: 50px;
+}
+.main .title--front--paragraphs--flex > p {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.main .title--front--paragraphs--flex--btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.main .title--front--paragraphs--flex--btn--act {
+  width: 36px;
+  height: 33px;
+  background: url(/assets/svg/btn--fon.svg) center;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2F2F2;
+  text-align: center;
+  font-family: "c Combe";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+.main .title--front--paragraphs--price--designe {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.main .title--front--paragraphs--price--designe h1 {
+  color: #F2F2F2;
+  font-family: "c Combe";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .title--front--paragraphs--price--designe h2 {
+  color: #B52A2D;
+  font-family: "c Combe";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: strikethrough;
+}
+.main .title--front--paragraphs--price button {
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+  background: url(/assets/svg/red--btn--forn.svg) center/cover;
+  width: 170px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.main .gallery {
+  margin-top: 50px;
+  margin-bottom: 62px;
+}
+.main .gallery--point {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .gallery--point h1 {
+  color: var(--gray-6, #F2F2F2);
+  font-family: "TroubleSide";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .gallery--cards {
+  margin-top: 24px;
+  margin-bottom: 41px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 21px;
+  width: fit-content;
+}
+.main .gallery--cards--fon.act {
+  background: url(/assets/img/man.png) center/cover;
+  width: 546px;
+  height: 658px;
+  position: relative;
+}
+.main .gallery--cards--fon.act::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/img/man--fon.png) center;
+}
+
+.footer {
+  background: url(/assets/svg/footer--fon.svg) top/cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-bottom: 24px;
+  position: relative;
+  z-index: 2;
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/assets/img/footer--fon.png) center/cover;
+  z-index: -1;
+}
+.footer--body--top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.footer--body--top--logo {
+  position: relative;
+}
+.footer--body--top--logo img {
+  cursor: pointer;
+}
+.footer--body--top--logo--meet {
+  position: absolute;
+  top: 31px;
+  left: 80px;
+}
+.footer--body--top--logo--meet img {
+  width: 150px;
+}
+.footer--body--top--logo--meet h1 {
+  position: absolute;
+  top: 109px;
+  left: 109px;
+  color: #F2F2F2;
+  text-align: center;
+  font-family: "TroubleSide";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  transform: rotate(-10.635deg);
+  max-width: 136px;
+}
+.footer--body--top--navigate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.footer--body--top--navigate a {
+  color: #FFF;
+  font-family: "TroubleSide";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: max-content;
+}
+.footer--body--top--navigate a:hover {
+  color: #000;
+  font-family: "TroubleSide";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.footer--body--top--navigate a.activ {
+  color: #000;
+}
+.footer--body--top--net {
+  position: relative;
+}
+.footer--body--top--net--icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4;
+}
+.footer--body--top--net--icons img {
+  cursor: pointer;
+}
+.footer--body--top--net--know {
+  position: absolute;
+  top: 40px;
+  left: -88px;
+}
+.footer--body--top--net--know img {
+  width: 150px !important;
+}
+.footer--body--top--net--know h1 {
+  position: absolute;
+  top: 53px;
+  left: -151px;
+  max-width: 164px;
+  color: #F2F2F2;
+  font-family: "TroubleSide";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  transform: rotate(-10.635deg);
+}
+.footer--body--top--net--know h1 span {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: "TroubleSide";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+.footer--body--end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 218px;
+}
+.footer--body--end p {
+  color: #FFF;
+  font-family: "TroubleSide";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.footer--body--end h1 {
+  color: #FFF;
+  font-family: "TroubleSide";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1690px) {
+  .container {
+    width: 1450px;
+  }
+  .main .title--pos.pos3 {
+    top: 82px;
+    right: 566px;
+  }
+  .main .title--pos.pos4 {
+    top: 99px;
+    right: 829px;
+  }
+  .main .title--pos h1 {
+    font-size: 24px;
+  }
+  .main .title--pos span {
+    font-size: 16px;
+  }
+  .main .title--pos.pos5 {
+    top: 405px;
+    right: 437px;
+  }
+  .main .title--pos.pos9 {
+    bottom: 297px;
+    left: 310px;
+  }
+  .main .title--pos.pos6 {
+    top: 478px;
+    right: 652px;
+  }
+  .main .gallery--cards--fon {
+    width: 469px;
+  }
+  .header::before {
+    background-position: initial;
+  }
+  .main .gallery--cards--fon.act {
+    width: 469px;
+    height: 653px;
+  }
+}
+@media (max-width: 1470px) {
+  .container {
+    width: 1200px;
+  }
+  .header--body--burger {
+    margin-left: 25%;
+  }
+  .main .title--pos.pos3 {
+    right: 448px;
+  }
+  .main .title--pos.pos4 {
+    right: 683px;
+  }
+  .main .title--pos.pos6 {
+    right: 524px;
+  }
+  .main .title--pos.pos5 {
+    top: 392px;
+    right: 317px;
+  }
+  .main .title--pos.pos8 {
+    top: 503px;
+    right: 141px;
+  }
+  .main .title--pos.pos8 h1 {
+    top: -89px;
+  }
+  .main .gallery--point--buttons button {
+    font-size: 14px;
+  }
+  .main .gallery--cards--fon {
+    width: 386px;
+    height: 460px;
+  }
+  .main .gallery--cards--fon::before {
+    background: url(/assets/img/man--fon.png) right/contain;
+  }
+  .footer::before {
+    background: url(/assets/img/footer--fon.png);
+    background-position: initial;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .main .title--follow > img {
+    width: 230px;
+    margin-bottom: -25px;
+  }
+  .main .title--follow > h1 {
+    font-size: 32px;
+  }
+  .main .gallery--cards--fon.act {
+    width: 386px;
+    height: 480px;
+  }
+  .main .gallery--cards--fon.act::before {
+    background-position: initial;
+  }
+}
+@media (max-width: 1220px) {
+  .container {
+    width: 1024px;
+  }
+  .header--body--burger--navigat a {
+    font-size: 13px;
+  }
+  .header--body--burger--buttons--leng h1 {
+    font-size: 16px;
+  }
+  .header--body--burger--buttons button a {
+    font-size: 14px;
+  }
+  .header--body--burger--buttons button {
+    background-size: contain;
+  }
+  .header--body--logo img {
+    width: 60px;
+  }
+  .main .title--pos.pos3 {
+    right: 373px;
+  }
+  .main .title--pos.pos9 {
+    left: 222px;
+  }
+  .main .title--pos.pos4 {
+    right: 596px;
+  }
+  .main .title--pos.pos5 {
+    top: 382px;
+    right: 251px;
+  }
+  .main .title--pos.pos6 {
+    right: 442px;
+    top: 455px;
+  }
+  .main .title--pos.pos8 {
+    top: 496px;
+    right: 109px;
+  }
+  .main .gallery--cards--fon {
+    width: 327px;
+    height: 395px;
+  }
+  .footer--body--top--navigate a {
+    font-size: 16px;
+  }
+  .footer--body--top--net img {
+    width: 31px;
+  }
+  .main .title--front--paragraphs > h1 {
+    font-size: 26px;
+  }
+  .main .title--front--paragraphs > p {
+    font-size: 12px;
+  }
+  .main .title--front--paragraphs--designe > p {
+    font-size: 12px;
+    max-width: 244px;
+  }
+  .main .title--front--paragraphs--designe--chart p {
+    font-size: 12px;
+  }
+  .main .title--front--paragraphs--flex > p {
+    font-size: 12px;
+  }
+  .main .title--front--paragraphs--flex--btn--act {
+    width: 30px;
+    height: 27px;
+    font-size: 14px;
+  }
+  .main .title--front--paragraphs--price--designe h1 {
+    font-size: 50px;
+  }
+  .main .title--front--paragraphs--price--designe h2 {
+    font-size: 19px;
+  }
+  .main .title--front--paragraphs--price button {
+    font-size: 21px;
+    width: 152px;
+    height: 39px;
+  }
+  .main .gallery--cards--fon.act {
+    width: 327px;
+    height: 395px;
+  }
+  .main .title--front--paragraphs--flex {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 1040px) {
+  .container {
+    width: 768px;
+  }
+  .header--body--burger {
+    margin-left: 15%;
+  }
+  .main .title--pos.pos2 {
+    right: 121px;
+  }
+  .pos1 img {
+    width: 50px !important;
+  }
+  .pos6 img {
+    width: 30px !important;
+  }
+  .pos2 img,
+  .pos3 img,
+  .pos9 img,
+  .pos5 img,
+  .pos8 img {
+    width: 80px !important;
+  }
+  .pos7 img {
+    width: 150px !important;
+  }
+  .main .title--pos.pos2 {
+    right: 70px;
+  }
+  .main .title--pos.pos2 h1 {
+    bottom: -58px;
+    right: 9px;
+  }
+  .main .title--pos h1 {
+    font-size: 20px;
+  }
+  .main .title--pos span {
+    font-size: 13px;
+  }
+  .main .title--pos.pos3 {
+    right: 221px;
+    top: 137px;
+  }
+  .main .title--pos.pos3 span {
+    bottom: 39px;
+    right: -32px;
+  }
+  .main .title--follow > img {
+    width: 190px;
+  }
+  .main .title--follow > h1 {
+    font-size: 25px;
+  }
+  .main .title--pos.pos8 {
+    top: 472px;
+    right: 109px;
+  }
+  .main .title--pos.pos8 h1 {
+    top: -75px;
+    right: -22px;
+  }
+  .main .title--pos.pos6 {
+    right: 299px;
+    top: 398px;
+  }
+  .main .title--pos.pos5 {
+    top: 345px;
+    right: 116px;
+  }
+  .main .title--pos.pos5 h1 {
+    bottom: 53px;
+    right: -80px;
+    text-align: center;
+  }
+  .main .title--pos.pos9 {
+    left: 135px;
+  }
+  .main .title--pos.pos9 h1 {
+    top: 9px;
+    left: -119px;
+  }
+  .main .title--pos.pos4 {
+    right: 429px;
+    top: 76px;
+  }
+  .main .title--pos.pos1 span {
+    bottom: -30px;
+    right: 21px;
+  }
+  .main .title--pos.pos2 {
+    right: 50px;
+  }
+  .main .title--pos.pos7 {
+    top: 522px;
+    left: 119px;
+  }
+  .main .title--pos.pos7 h1 {
+    top: -6px;
+    left: -117px;
+  }
+  .main .gallery--point h1 {
+    font-size: 13px;
+  }
+  .main .gallery--point--buttons button {
+    font-size: 13px;
+  }
+  .main .gallery--cards--fon {
+    width: 242px;
+    height: 292px;
+  }
+  .main .gallery--buttons--btn button {
+    font-size: 15px;
+    width: 30px;
+    height: 26px;
+  }
+  .footer--body--top--navigate a {
+    font-size: 13px;
+  }
+  .footer--body--top--logo--meet h1 {
+    font-size: 15px;
+    top: 82px;
+    left: 89px;
+  }
+  .footer--body--top--logo--meet img {
+    width: 110px;
+  }
+  .footer--body--top--net--know img {
+    width: 116px !important;
+  }
+  .footer--body--top--net--know {
+    left: -48px;
+  }
+  .footer--body--top--net--know h1 {
+    font-size: 20px;
+    max-width: 136px;
+    top: 52px;
+    left: -122px;
+  }
+  .footer--body--top--net--know h1 span {
+    font-size: 15px;
+  }
+  .main .gallery--cards--fon.act {
+    width: 242px;
+    height: 297px;
+  }
+  .main .title--text h1 {
+    font-size: 12px;
+  }
+  .main .title--front {
+    gap: 26px;
+  }
+  .main .title--front .gallery--cards--fon.act {
+    width: 808px;
+    height: 440px;
+    background-size: cover;
+  }
+  .main .title--front--paragraphs > h1 {
+    font-size: 16px;
+  }
+  .main .title--front--paragraphs > p {
+    font-size: 9px;
+    margin-bottom: 27px;
+  }
+  .main .title--front--paragraphs--designe > p {
+    font-size: 9px;
+    max-width: 181px;
+  }
+  .main .title--front--paragraphs--designe--chart p {
+    font-size: 9px;
+  }
+  .main .title--front--paragraphs--flex > p {
+    font-size: 9px;
+  }
+  .main .title--front--paragraphs--flex--btn--act {
+    width: 27px;
+    height: 24px;
+    font-size: 11px;
+  }
+  .main .title--front--paragraphs--price--designe h1 {
+    font-size: 40px;
+  }
+  .main .title--front--paragraphs--price--designe h2 {
+    font-size: 17px;
+  }
+  .main .title--front--paragraphs--price button {
+    font-size: 17px;
+    width: 127px;
+    height: 28px;
+  }
+}
+@media (max-width: 780px) {
+  .container {
+    width: 420px;
+  }
+  .header--body--burger {
+    width: 25px;
+    margin-left: 0;
+  }
+  .header--body--burger--navigat {
+    display: none;
+  }
+  .header--body--burger--buttons {
+    display: none;
+  }
+  .header--body--menu {
+    display: block;
+  }
+  .main .title--pos.pos2 {
+    right: 0px;
+  }
+  .pos1 img,
+  .pos4 img {
+    width: 40px !important;
+  }
+  .pos6 img {
+    width: 20px !important;
+  }
+  .pos2 img,
+  .pos3 img,
+  .pos9 img,
+  .pos5 img,
+  .pos8 img {
+    width: 60px !important;
+  }
+  .pos7 img {
+    width: 80px !important;
+  }
+  .main .gallery--cards--fon {
+    width: 205px;
+    height: 241px;
+  }
+  .main .gallery--point--buttons button {
+    font-size: 14px;
+  }
+  .main .gallery--point--buttons button {
+    padding: 11px 21px 12px 21px;
+    background-size: cover;
+  }
+  .main .gallery--point--buttons button,
+  .main .gallery--point h1 {
+    font-size: 9px;
+  }
+  .gallery--point--buttons img {
+    width: 10px;
+  }
+  .main .gallery--cards {
+    margin-top: 18px;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  .main .title--pos span {
+    font-size: 9px;
+  }
+  .main .title--pos.pos1 span {
+    bottom: -17px;
+    right: 30px;
+  }
+  .main .title--pos h1 {
+    font-size: 13px;
+  }
+  .main .title--pos.pos2 h1 {
+    bottom: -41px;
+    right: 48px;
+  }
+  .main .title--follow > img {
+    width: 153px;
+    margin-bottom: -14px;
+  }
+  .main .title {
+    padding: 100px 0;
+  }
+  .main .title--follow > h1 {
+    font-size: 17px;
+  }
+  .main .title--follow--icons img {
+    width: 24px;
+    cursor: pointer;
+  }
+  .main .title--pos.pos5 {
+    top: 273px;
+    right: 0;
+  }
+  .main .title--pos.pos5 h1 {
+    bottom: 44px;
+    right: -64px;
+    text-align: center;
+  }
+  .main .title--pos.pos8 {
+    top: 377px;
+    right: 38px;
+  }
+  .main .title--pos.pos8 h1 {
+    top: -54px;
+    right: 3px;
+  }
+  .main .title--pos.pos3 {
+    right: 70px;
+    top: 112px;
+  }
+  .main .title--pos.pos3 span {
+    bottom: 23px;
+    right: 10px;
+  }
+  .main .title--pos.pos9 {
+    left: 48px;
+    bottom: 215px;
+  }
+  .main .title--pos.pos9 h1 {
+    left: -79px;
+  }
+  .main .title--pos.pos6 span {
+    font-size: 9px;
+    bottom: -20px;
+    left: -41px;
+  }
+  .main .title--pos.pos6 {
+    right: 120px;
+    top: 320px;
+  }
+  .main .title--pos.pos4 {
+    right: 202px;
+    top: 76px;
+  }
+  .main .title--pos.pos4 h1 {
+    bottom: -2px;
+    right: 108px;
+    text-align: center;
+  }
+  .main .title--pos.pos7 {
+    top: 409px;
+    left: 51px;
+  }
+  .main .title--pos.pos7 h1 {
+    top: 4px;
+    left: -75px;
+  }
+  .main .gallery--buttons--btn button {
+    font-size: 12px;
+    width: 27px;
+    height: 23px;
+  }
+  .main .gallery--buttons img {
+    cursor: pointer;
+    width: 9px;
+  }
+  .footer--body--top--navigate {
+    gap: 11px;
+  }
+  .footer--body--top--net img {
+    width: 24px;
+  }
+  .footer--body--end {
+    margin-top: 172px;
+  }
+  .footer--body--end p {
+    font-size: 8px;
+  }
+  .footer--body--end h1 {
+    font-size: 12px;
+  }
+  .footer--body--top--logo--meet img {
+    width: 93px;
+  }
+  .footer--body--top--logo--meet {
+    top: 56px;
+    left: 75px;
+  }
+  .footer--body--top--net--know img {
+    width: 90px !important;
+  }
+  .footer--body--top--net--know {
+    left: -19px;
+  }
+  .footer--body--top--logo--meet h1 {
+    font-size: 13px;
+    top: 69px;
+    left: 66px;
+  }
+  .footer--body--top--net--know h1 span {
+    font-size: 11px;
+  }
+  .footer--body--top--net--know h1 {
+    font-size: 15px;
+    max-width: 78px;
+    top: 55px;
+    left: -73px;
+  }
+  .main .title {
+    padding: 0 0;
+  }
+  .main .gallery--cards--fon.act {
+    width: 205px;
+    height: 253px;
+  }
+  .main .title--text {
+    margin-bottom: 13px;
+  }
+  .title--text span img {
+    width: 15px;
+  }
+  .main .title--front--paragraphs > h1 {
+    font-size: 11px;
+    max-width: 157px;
+    margin-bottom: 16px;
+  }
+  .paragraphs > p {
+    font-size: 7px;
+    margin-bottom: 17px;
+  }
+  .main .title--front--paragraphs > p {
+    font-size: 12px;
+  }
+  .main .title--front--paragraphs > p {
+    max-width: 274px;
+    margin-bottom: 20px;
+    font-size: 8px;
+  }
+  .main .title--front--paragraphs--designe > p {
+    font-size: 7px;
+    max-width: 136px;
+  }
+  .main .title--front--paragraphs--designe--chart p {
+    font-size: 7px;
+  }
+  .main .title--front--paragraphs--designe--chart p:first-child {
+    margin-bottom: 7px;
+  }
+  .main .title--front--paragraphs--flex > p {
+    font-size: 7px;
+  }
+  .main .title--front--paragraphs--flex--btn--act {
+    width: 24px;
+    height: 21px;
+    font-size: 9px;
+  }
+  .main .title--front--paragraphs--flex {
+    margin-bottom: 20px;
+  }
+  .main .title--front--paragraphs--price--designe h1 {
+    font-size: 30px;
+  }
+  .main .title--front--paragraphs--price--designe h2 {
+    font-size: 14px;
+  }
+  .main .title--front--paragraphs--price button {
+    font-size: 14px;
+    width: 100px;
+    height: 22px;
+  }
+  .main .title--front {
+    gap: 13px;
+  }
+  .main .title--front--paragraphs--flex {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .main .title--front {
+    flex-direction: column;
+  }
+  .main .title--front .gallery--cards--fon.act {
+    width: 100%;
+  }
+  .main .title--front {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .main .title--front--paragraphs > p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .main .title--pos.pos9 {
+    left: 82px;
+  }
+  .main .title--pos.pos9 h1 {
+    left: -58px;
+  }
+  .main .title--pos.pos5 {
+    top: 273px;
+    right: 41px;
+  }
+  .pos5 img {
+    transform: rotate(42deg);
+  }
+  .main .title--pos.pos5 h1 {
+    transform: rotate(22.575deg);
+    bottom: 3px;
+    right: -64px;
+  }
+  .main .title--pos.pos7 {
+    top: 409px;
+    left: 89px;
+  }
+}
+@media (max-width: 470px) {
+  .main .title--pos.pos5 {
+    display: none;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    width: 375px;
+  }
+  .main .gallery--cards--fon {
+    width: 182px;
+    height: 217px;
+  }
+  .main .title--pos.pos9 {
+    left: 67px;
+  }
+  .main .title--pos.pos3 {
+    right: 45px;
+  }
+  .main .title--pos.pos6 {
+    right: 95px;
+    top: 320px;
+  }
+  .footer--body--top--logo--meet img {
+    width: 72px;
+  }
+  .footer--body--top--logo--meet h1 {
+    font-size: 11px;
+    top: 54px;
+    left: 26px;
+  }
+  .footer--body--top--net--know img {
+    width: 70px !important;
+  }
+  .footer--body--top--net--know h1 span {
+    font-size: 9px;
+  }
+  .footer--body--top--net--know h1 {
+    font-size: 12px;
+    top: 55px;
+    left: -56px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+  .main .gallery--cards--fon {
+    width: 145px;
+    height: 174px;
+  }
+  .footer::before {
+    background-size: cover;
+  }
+  .footer--body--end p {
+    text-align: center;
+  }
+  .footer--body--end h1 {
+    text-align: center;
+  }
+  .footer--body--end {
+    gap: 20px;
+  }
+  .main .title--pos.pos2 {
+    right: -16px;
+  }
+  .main .title--pos.pos4 {
+    right: 138px;
+  }
+  .main .title--pos.pos3 {
+    right: 15px;
+  }
+  .main .title--pos.pos9 {
+    left: 39px;
+  }
+  .main .title--pos.pos8 {
+    right: 25px;
+  }
+  .main .title--pos.pos6 {
+    right: 64px;
+  }
+  .main .title--pos.pos7 {
+    left: 56px;
+  }
+  .footer--body--top--logo--meet {
+    top: 63px;
+    left: 61px;
+  }
+  .footer--body--top--net--know {
+    left: -7px;
+    top: 29px;
+  }
+  .footer--body--top--net--know h1 {
+    top: 60px;
+    left: -43px;
+  }
+  .main .gallery--cards--fon.act {
+    width: 145px;
+    height: 176px;
+  }
+  .main .gallery--cards--fon.act::before {
+    background-size: contain;
+  }
+}
+
+/*# sourceMappingURL=secand.css.map */

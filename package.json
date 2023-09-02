@@ -1,0 +1,17 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass scss/main.scss css/style.css --watch",
+    "go": "sass scss/sacand.scss css/secand.css --watch",
+    "buy": "sass scss/buy.scss css/buy.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "scss": "^0.2.4"
+  }
+}
